@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   LayoutDashboard,
   Users,
@@ -30,58 +32,58 @@ function AdminDashboard() {
         <nav className="admin-nav">
 
           {/* DASHBOARD */}
-          <a
-            href="/admin"
+          <Link
+            to="/admin"
             className="admin-nav-link active"
           >
             <LayoutDashboard size={18} />
             Dashboard
-          </a>
+          </Link>
 
           {/* USERS */}
-          <a
-            href="/admin/users"
+          <Link
+            to="/admin/users"
             className="admin-nav-link"
           >
             <Users size={18} />
             Users
-          </a>
+          </Link>
 
           {/* DOCTORS */}
-          <a
-            href="/admin/doctors"
+          <Link
+            to="/admin/doctors"
             className="admin-nav-link"
           >
             <UserCheck size={18} />
             Doctors
-          </a>
+          </Link>
 
           {/* HOSPITALS */}
-          <a
-            href="/admin/hospitals"
+          <Link
+            to="/admin/hospitals"
             className="admin-nav-link"
           >
             <Building2 size={18} />
             Hospitals
-          </a>
+          </Link>
 
           {/* BLOCKCHAIN */}
-          <a
-            href="/admin/blockchain"
+          <Link
+            to="/admin/blockchain"
             className="admin-nav-link"
           >
             <Activity size={18} />
             Blockchain Activity
-          </a>
+          </Link>
 
           {/* SYSTEM ACTIVITY */}
-          <a
-            href="/admin/activity"
+          <Link
+            to="/admin/activity"
             className="admin-nav-link"
           >
             <Clock size={18} />
             System Activity
-          </a>
+          </Link>
 
         </nav>
 
@@ -91,6 +93,7 @@ function AdminDashboard() {
         </div>
 
       </aside>
+
 
       {/* MAIN CONTENT */}
       <main className="admin-main">
